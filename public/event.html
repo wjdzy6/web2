@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Details - HopeBridge Charity Events</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">Hope<span>Bridge</span></div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="search.html">Search Events</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Event Hero -->
+    <header class="event-detail-hero">
+        <div class="container">
+            <p style="color:#f1c40f; font-weight:600; margin-bottom:8px;" id="event-category"></p>
+            <h1 id="event-name">Loading event...</h1>
+            <p id="event-date-time"></p>
+        </div>
+    </header>
+
+    <!-- Event Content -->
+    <section class="section">
+        <div class="container">
+            <div id="event-body">
+                <p class="loading">Loading event details...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Register Modal -->
+    <div id="register-modal" class="modal-overlay">
+        <div class="modal-box">
+            <h3>Registration</h3>
+            <p>This feature is currently under construction.</p>
+            <button id="modal-close-btn" class="btn btn-primary">OK</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>HopeBridge Foundation</h4>
+                    <p>Connecting communities through meaningful charity events since 2010.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <p>Email: info@hopebridge.org</p>
+                    <p>Phone: +61 2 1234 5678</p>
+                    <p>Address: 100 Charity Lane, Sydney NSW 2000</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="search.html">Search Events</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 HopeBridge Foundation. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/event.js"></script>
+</body>
+</html>

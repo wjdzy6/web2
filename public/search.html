@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Events - HopeBridge Charity Events</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">Hope<span>Bridge</span></div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="search.html" class="active">Search Events</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero">
+        <div class="container">
+            <h1>Find a Charity Event Near You</h1>
+            <p>Search our upcoming events by date, location, or category. Find an event that speaks to your heart and join us in making a difference.</p>
+        </div>
+    </header>
+
+    <!-- Search Form -->
+    <section class="section">
+        <div class="container">
+            <div class="search-section">
+                <h2 style="color:#1a5276; margin-bottom:20px;">Filter Events</h2>
+                <form id="search-form">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="filter-date">Date</label>
+                            <input type="date" id="filter-date" name="date">
+                        </div>
+                        <div class="form-group">
+                            <label for="filter-location">Location</label>
+                            <input type="text" id="filter-location" name="location" placeholder="e.g. Sydney, Melbourne">
+                        </div>
+                        <div class="form-group">
+                            <label for="filter-category">Event Category</label>
+                            <select id="filter-category" name="category">
+                                <option value="">All Categories</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-actions">
+                        <button type="button" id="clear-btn" class="btn btn-secondary">Clear Filters</button>
+                        <button type="submit" class="btn btn-primary">Search</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Error message -->
+            <div id="error-message" class="error-message"></div>
+
+            <!-- Results -->
+            <div id="results-count" style="margin-bottom:20px; color:#5d6d7e; font-weight:600;"></div>
+            <div id="results-container" class="events-grid">
+                <p class="loading">Use the filters above to search for events.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>HopeBridge Foundation</h4>
+                    <p>Connecting communities through meaningful charity events since 2010.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <p>Email: info@hopebridge.org</p>
+                    <p>Phone: +61 2 1234 5678</p>
+                    <p>Address: 100 Charity Lane, Sydney NSW 2000</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="search.html">Search Events</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 HopeBridge Foundation. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/search.js"></script>
+</body>
+</html>
